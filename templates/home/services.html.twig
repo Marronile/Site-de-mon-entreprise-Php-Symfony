@@ -1,0 +1,89 @@
+{# Extending the base template #}
+{% extends 'base.html.twig' %}
+
+
+{# Page title #}
+{% block title %}Nos services{% endblock %}
+
+{# Page header #}
+{% block page_header %}
+<div class="page-header header-filter" data-parallax="true" style="background-image: url('./images/city.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="title">Votre histoire commence avec nous!</h1>
+                <h4>La meilleure manière d'apprendre la programmation est la pratique. C'est pourquoi tous nos
+                    services
+                    visent à donner à tout débutant en développement web avec les language Php -NodeJs-Python, une
+                    compétence basé sur l'expérience.
+                </h4>
+                <br>
+                <a id="github" href="https://github.com/marroniile" target="_blank" class="btn btn-raised btn-github"
+                    rel="nofollow">
+                    <i class="fa fa-github"></i>
+                    Nos codes sources
+                </a>
+            </div>
+        </div>
+    </div>
+</div>{% endblock %}
+
+{# Page content #}
+{% block page_content %}
+<div class="container">
+    <div class="section text-center">
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto">
+                <h2 class="title">Parlons de nos services</h2>
+                <h5 class="description">Vous avez l'intention d'apprendre la programmation web ? Alors bienvenue
+                    chez Marronile.
+                    Ici nous apprenons avec une stratégie basé sur les projets réels.
+                    Utilisez nos services pour acquérir une bonne dose d'expérience
+                </h5>
+            </div>
+        </div>
+        <div class="features">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="info">
+                        <div class="icon icon-info">
+                            <i class="material-icons">chat</i>
+                        </div>
+                        <h4 class="info-title">Tutoriel orienté projet</h4>
+                        <p>En suivant nos tutoriels, vous aurez le sentiment d'être entrain de réaliser un projet
+                            réel pour votre premier client.
+                            N'hésitez pas à faire un tour sur notre blog pour lire le tutoriel écrit; Si vous
+                            préferez le tutoriel video, veuillez faire un tour sur notre chaine youtube.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info">
+                        <div class="icon icon-success">
+                            <i class="material-icons">code</i>
+                        </div>
+                        <h4 class="info-title">Code source gratuit pour de projet réel</h4>
+                        <p>Tous les codes sources de nos tutoriels de projet réels sont disponible gratuitement
+                            sur github. Vous pouvez les cloner et les utiliser pour votre projet
+                            gratuitement. N'oubliez pas de nous donner un <strong>star</strong> sur github pour
+                            nous supporter.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info">
+                        <div class="icon icon-danger">
+                            <i class="material-icons">computer</i>
+                        </div>
+                        <h4 class="info-title">Coaching en programmation web pour débutant</h4>
+                        <p>La plupart des débutants en programmation s'égarent sur le web dans le soucis de vouloir tout apprendre et
+                            n'importe quoi.
+                            Si vous faites partir de ceux-là, n'hésitez pas à nous faire signe pour bénéficier de notre
+                            programme de coaching preque gratuit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>{% endblock %}

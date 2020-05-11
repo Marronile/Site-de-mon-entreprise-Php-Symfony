@@ -1,0 +1,130 @@
+{# Extending base template #}
+{% extends 'base.html.twig' %}
+
+{# Page title #}
+{% block title %}A propos{% endblock %}
+
+{# Page header #}
+{% block page_header %}
+<div class="page-header header-filter" data-parallax="true"
+    style="background-image: url('./images/profile_city.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="title">A propos de Marronile</h1>
+                <h4>Qui sommes-nous et que visons-nous ?</h4>
+                <br>
+                <a id="github" href="https://github.com/marroniile" target="_blank" class="btn btn-raised btn-github"
+                    rel="nofollow">
+                    <i class="fa fa-github"></i>
+                    Nos codes sources
+                </a>
+            </div>
+        </div>
+    </div>
+</div>{% endblock %}
+
+{# Page  content #}
+{% block page_content %}
+<div class="container">
+    <div class="section text-center">
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto">
+                <h2 class="title">A propos de nous</h2>
+                <h5 class="description">Une vision, une mission et des actions! C'est tout nous! Et la seule
+                    mission est
+                    de vous donner des tutoriels orientés projets réels dans le développement web accompagné de code
+                    source disponible sur github
+                    sous licence MIT.
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="section text-center">
+        <h2 class="title">Découvrez notre équipe</h2>
+        <div class="team">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <div class="card card-plain">
+                            <div class="col-md-6 ml-auto mr-auto">
+                                <img src="./images/faces/avatar.jpg" alt="Thumbnail Image"
+                                    class="img-raised rounded-circle img-fluid">
+                            </div>
+                            <h4 class="card-title">Justine CHABI
+                                <br>
+                                <small class="card-description text-muted">Graphiste designer</small>
+                            </h4>
+                            <div class="card-body">
+                                <p class="card-description">
+                                    Justine est notre artiste en chef; avec qu'elle, nos projets web déviennent
+                                    des beaux arts et nos pages <strong>awesome</strong>
+                                </p>
+                            </div>
+                            <div class="card-footer justify-content-center">
+                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                                <a href="#pablo" class="btn btn-link btn-just-icon"><i
+                                        class="fa fa-facebook-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <div class="card card-plain">
+                            <div class="col-md-6 ml-auto mr-auto">
+                                <img src="./images/faces/christian.jpg" alt="Thumbnail Image"
+                                    class="img-raised rounded-circle img-fluid">
+                            </div>
+                            <h4 class="card-title">Justin Dah-kenangnon
+                                <br>
+                                <small class="card-description text-muted">CEO Marronile</small>
+                            </h4>
+                            <div class="card-body">
+                                <p class="card-description">
+                                    Justin est chargé de la direction de l'entreprise. Il gère Marronile avec
+                                    une intelligence enviable et une
+                                    exigence au travail connu de tous.
+                                </p>
+                            </div>
+                            <div class="card-footer justify-content-center">
+                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://github.com/Dahkenangnon" class="btn btn-link btn-just-icon"><i
+                                        class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <div class="card card-plain">
+                            <div class="col-md-6 ml-auto mr-auto">
+                                <img src="./images/faces/kendall.jpg" alt="Thumbnail Image"
+                                    class="img-raised rounded-circle img-fluid">
+                            </div>
+                            <h4 class="card-title">TOSSOU Eudoxie
+                                <br>
+                                <small class="card-description text-muted">Lead developper relation</small>
+                            </h4>
+                            <div class="card-body">
+                                <p class="card-description">Eudoxie s'occupe des relations. Elle est vraiment
+                                    cool.
+                                    Suivez-là sur les réseaux.
+                                </p>
+                            </div>
+                            <div class="card-footer justify-content-center">
+                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                                <a href="#pablo" class="btn btn-link btn-just-icon"><i
+                                        class="fa fa-facebook-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>{% endblock %}

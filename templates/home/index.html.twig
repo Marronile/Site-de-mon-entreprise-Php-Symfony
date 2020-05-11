@@ -1,0 +1,126 @@
+{# Extending the base template
+ #}{% extends 'base.html.twig' %}
+
+{# Page title #}
+{% block title %}Bienvenue sur Marronile.com{% endblock %}
+
+{# Page header #}
+{% block page_header %}
+<div class="page-header header-filter clear-filter purple-filter" data-parallax="true"
+    style="background-image: url('./images/bg2.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto">
+                <div class="brand">
+                    <h1>Marronile</h1>
+                    <h3>Apprendre le web vec une approchez orientéz projet pour une compétence basé sur l'expérience</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>{% endblock %}
+
+{# Page content#}
+{% block page_content %}
+<div class="section text-center">
+    <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+            <h2 class="title">Voici les codes source de nos 3 derniers projets </h2>
+            <h5 class="description">Chaque projet est suivi de tutoriel et du code source libre à tous.
+                Vous pouvez donc le télécharger et l'adapter
+                à votre besoin. Notez que les codes source sont fait pour être utilisé en production après quelques
+                adaptation.
+                Si vous souhaitez lire le tutoriel, veuillez aller sur notre blog <a
+                    href="http://www.marronile.com/">marronile.com</a>
+            </h5>
+        </div>
+    </div>
+    <div class="features">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="info">
+                    <div class="icon icon-info">
+                        <i class="material-icons">code</i>
+                    </div>
+                    <h4 class="info-title">Site vitrine (Node js -Express js)</h4>
+                    <p>Site de présentation simple d'une entreprise ici (Marronile) avec formulaire fonctionnel codé
+                        avec node
+                        js et<a href="https://www.expressjs.com/"> express js.</a>
+                        Le server web est conçu avec express js</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info">
+                    <div class="icon icon-success">
+                        <i class="material-icons">code</i>
+                    </div>
+                    <h4 class="info-title">Site vitrine (Php - Symfony)</h4>
+                    <p>Site de présentation simple d'une entreprise ici (Marronile) avec formulaire fonctionnel codé en Php
+                        et le
+                        <a href="https://www.symfony.com/"> framework Symfony 5.0.8.</a>
+                        Le site est fait de manière à vous donner la possibilité d'ajouter des fonctionnalité dynamique
+                        si vous
+                        en avez besoin et de l'étendre à volonté.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info">
+                    <div class="icon icon-danger">
+                        <i class="material-icons">code</i>
+                    </div>
+                    <h4 class="info-title">Site vitrine (Python - Django)</h4>
+                    <p>Site de présentation simple d'une entreprise ici (Marronile) avec formulaire fonctionnel codé
+                        python et
+                        le
+                        framework <a href="https://www.djangoproject.com" target="_blank">Django</a>
+                        Le site est fait de manière à vous donner la possibilité d'ajouter des fonctionnalité dynamique
+                        si vous
+                        en avez besoin.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section section-download" id="downloadSection">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-8 mx-auto">
+                <h2>Suivre le tutoriel ?</h2>
+                <h4>Aller sur notre blog <a href="https://www.marronile.com" target="_blank">marronile</a> pour suivre
+                    le
+                    tutoriel. N'oubliez pas de laisser vos commentaires</h4>
+            </div>
+            <div class="col-sm-8 col-md-5 mx-auto">
+                <a href="https://github.com/marronile" class="btn btn-rose btn-upgrade btn-lg" target="_blank">
+                    <i class="fa fa-github"></i>Notre repository github
+                </a>
+            </div>
+        </div>
+        <div class="sharing-area text-center">
+            <div class="row justify-content-center">
+                <h3>Merci de nous supporter</h3>
+            </div>
+            <a id="twitter" class="btn btn-raised btn-twitter" href="https://twitter.com/marronile" rel="nofollow">
+                <i class="fa fa-twitter"></i>
+                Tweetter
+            </a>
+            <a id="facebook" class="btn btn-raised btn-facebook" href="https://www.facebook.com/marronile"
+                rel="nofollow">
+                <i class="fa fa-facebook-square"></i>
+                Facebook
+            </a>
+            <a id="instagram" class="btn btn-raised btn-instagram" href="https://www.instagram.com/marronile"
+                rel="nofollow">
+                <i class="fa fa-instagram"></i>
+                Instagram
+            </a>
+            <a id="github" href="https://github.com/marroniile" target="_blank" class="btn btn-raised btn-github"
+                rel="nofollow">
+                <i class="fa fa-github"></i>
+                Star
+            </a>
+        </div>
+    </div>
+</div>{% endblock %}
